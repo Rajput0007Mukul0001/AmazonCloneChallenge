@@ -1,0 +1,82 @@
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo{
+    width: 100px;
+    object-fit: contain;
+    /* object-fit: cover; */
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+/* //conatariner hai ye bada wala konsa dekh input or search logo ke samne wala */
+.header__search{
+/* input or icons ek sath lane per ye bada component hai uske bahar usme  */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius:24px;
+    /* background-color: rgb(10, 179, 18); */
+}
+
+.header__searchInput
+{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+
+}
+
+.header__nav{
+    /* ye component bhi flex box mai jo default row wise hai useko hum space denge evenly isme */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__optionLineOne{
+    font-size: 10px;   
+}
+
+.header__optionLineTwo{
+    font-size: 13px;
+    /* block a little elment here */
+    font-weight: 800;   
+}
+
+
+.header__option{
+    /* ye hai uper niche ke options ke liye span me jo hai or span kiyu use kiya because useki bhi height hoti hai already isme */
+    /* //isse sare hi coolumn me aah jayenge jitne bhi hau udar  uske header_nav ko target krna padega aache se hame isme */
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header__optionBasket{
+   display: flex;
+   align-items: center;
+   color: white;
+
+}
+
+.header__optionCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
